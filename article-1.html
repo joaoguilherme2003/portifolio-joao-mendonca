@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>João Guilherme Mendonça</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/joao.jpeg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">João Guilherme Mendonça</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">Sobre </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projetos
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#experiencias" class="header__link">
+                Experiências
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#artigos" class="header__link"> Artigos </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about">Sobre</a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects">Projetos</a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#experiencias">Experiências</a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#artigos">Artigos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">REST APIs vs. GraphQL APIs</h1>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">API's</h3>
+              <p class="project-details__desc-para">
+                No mundo do desenvolvimento web, as APIs são essenciais para
+                conectar sistemas e serviços. Entre as abordagens mais populares
+                estão REST e GraphQL. Enquanto REST é conhecido por sua
+                simplicidade e flexibilidade, GraphQL oferece uma maneira mais
+                eficiente e precisa de solicitar dados. Mas qual delas é a
+                melhor escolha para o seu projeto?
+              </p>
+              <h3 class="project-details__content-title">REST</h3>
+              <p class="project-details__desc-para">
+                REST, ou Representational State Transfer, é uma arquitetura que
+                segue princípios bem definidos, utilizando métodos HTTP como
+                GET, POST, PUT e DELETE para operações de CRUD (Criar, Ler,
+                Atualizar, Deletar). Cada recurso em uma API REST é identificado
+                por um URL, tornando a estrutura simples e familiar para muitos
+                desenvolvedores. A simplicidade do REST é uma de suas maiores
+                vantagens, facilitando a compreensão e implementação,
+                especialmente para aqueles com experiência em desenvolvimento
+                web. Além disso, a flexibilidade e escalabilidade do REST
+                permitem uma comunicação eficiente entre sistemas diversos.
+                Outro benefício significativo é a capacidade de cacheamento, que
+                pode melhorar o desempenho das aplicações ao armazenar respostas
+                das APIs para uso futuro.
+              </p>
+              <p class="project-details__desc-para">
+                No entanto, o REST não é isento de desvantagens. Problemas como
+                overfetching e underfetching são comuns, onde uma API pode
+                retornar mais dados do que o necessário ou menos dados do que o
+                necessário, respectivamente. Isso pode obrigar o cliente a fazer
+                múltiplas requisições para obter todas as informações desejadas,
+                impactando a eficiência. Além disso, a evolução da API pode ser
+                um desafio; alterações na estrutura da API podem exigir mudanças
+                significativas no cliente, complicando a manutenção e
+                atualização contínua.
+              </p>
+              <h3 class="project-details__content-title">GraphQL</h3>
+              <p class="project-details__desc-para">
+                Por outro lado, GraphQL, desenvolvido pelo Facebook, é uma
+                linguagem de consulta para APIs que permite aos clientes
+                solicitar exatamente os dados que precisam. Isso resolve os
+                problemas de overfetching e underfetching, proporcionando uma
+                comunicação mais eficiente e precisa. Com GraphQL, uma única
+                requisição pode buscar múltiplos recursos, reduzindo
+                significativamente o número de chamadas à API e melhorando a
+                performance. A evolução da API é simplificada em GraphQL, já que
+                adicionar novos campos não afeta os clientes existentes,
+                permitindo uma evolução mais tranquila e contínua.
+              </p>
+              <p class="project-details__desc-para">
+                Entretanto, GraphQL também apresenta desafios. A configuração
+                inicial pode ser mais complexa e a curva de aprendizado mais
+                íngreme, especialmente para desenvolvedores novatos. Implementar
+                cacheamento em GraphQL pode ser mais complicado do que em REST,
+                exigindo abordagens específicas e bem planejadas. Além disso,
+                consultas mal formuladas podem resultar em operações complexas e
+                demoradas no servidor, impactando a performance negativamente.
+              </p>
+              <h3 class="project-details__content-title">Qual escolher?</h3>
+              <p class="project-details__desc-para">
+                A escolha entre REST e GraphQL depende das necessidades
+                específicas do seu projeto. REST é ideal para aplicações simples
+                onde a familiaridade e a simplicidade são cruciais. Em
+                contrapartida, GraphQL se destaca em aplicações complexas onde a
+                flexibilidade e a eficiência na recuperação de dados são
+                essenciais. Compreender as características de cada abordagem
+                ajudará a tomar a decisão mais informada e eficaz, garantindo
+                que a API escolhida atenda plenamente às suas necessidades de
+                desenvolvimento.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/joao-guilherme-gomes-furtado"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/joaoguilherme2003"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="mailto:joaoguigfm123@gmail"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/gmail.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">João Guilherme Mendonça</h4>
+            <p class="main-footer__short-desc">
+              Entusiasta do mundo da tecnologia e inovação. Desenvolvedor
+              Fullstack voltado a soluções eficientes e ágeis.
+            </p>
+            <br />
+            <a
+              class="main-footer__short-desc"
+              href="mailto:joaoguigfm123@gmail.com"
+              >joaoguigfm123@gmail.com</a
+            >
+          </div>
+        </div>
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Schema made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
